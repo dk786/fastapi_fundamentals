@@ -1,7 +1,7 @@
 import uvicorn
 from fastapi import FastAPI, HTTPException
 
-from schemas import load_db, save_db, Car
+from schemas import load_db, save_db, CarInput, CarOutput
 
 app = FastAPI()
 
@@ -34,10 +34,13 @@ def results(result: list) -> list:
         raise HTTPException(status_code=404, detail="No car matching provided parameters")
 
 
-@app.post("/api/cars/")
-def add_car(car: Car):
-    db.append(car)
+# create a car entry using the Car object.
+@app.post("/api/cars/", response_model=CarOutput)
+def add_car(car: CarInput) -> CarOutput:
+    new_car = CarOutput(size = car.size, doors=car.doors, fuel=car.fuel, transmission=car.transmission, id=len(db) + 1)
+    db.append(new_car)
     save_db(db)
+    return new_car
 
 
 if __name__ == "__main__":

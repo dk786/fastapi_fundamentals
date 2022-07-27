@@ -1,0 +1,35 @@
+GET http://127.0.0.1:8000/api/cars
+Accept: application/json
+
+###
+DELETE http://127.0.0.1:8000/api/cars/14
+Accept: application/json
+
+###
+GET http://127.0.0.1:8000/api/cars/14
+Accept: application/json
+
+###
+POST http://127.0.0.1:8000/api/cars/
+Content-Type: application/json
+
+{ "size": "xl",
+  "fuel": "diesel",
+  "doors": 3,
+  "transmission": "hybrid"
+}
+
+###
+PUT http://127.0.0.1:8000/api/cars/14
+Content-Type: application/json
+
+{ "size": "xl",
+  "fuel": "nuclear",
+  "doors": 8,
+  "transmission": "automatic"
+}
+
+###
+
+
+

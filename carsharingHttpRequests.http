@@ -1,3 +1,14 @@
+POST http://127.0.0.1:8000/api/cars/1/trips
+Content-Type: application/json
+
+{
+  "start": 1200,
+  "end": 1450,
+  "description": "Testing the trip"
+
+}
+
+###
 GET http://127.0.0.1:8000/api/cars
 Accept: application/json
 

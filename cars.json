@@ -4,90 +4,126 @@
         "fuel": "petrol",
         "doors": 3,
         "transmission": "automatic",
-        "id": 1
+        "id": 1,
+        "trips": []
     },
     {
         "size": "s",
         "fuel": "electric",
         "doors": 4,
         "transmission": "automatic",
-        "id": 2
+        "id": 2,
+        "trips": []
     },
     {
         "size": "s",
         "fuel": "diesel",
         "doors": 4,
         "transmission": "automatic",
-        "id": 3
+        "id": 3,
+        "trips": []
     },
     {
         "size": "m",
         "fuel": "petrol",
         "doors": 3,
         "transmission": "automatic",
-        "id": 4
+        "id": 4,
+        "trips": []
     },
     {
         "size": "m",
         "fuel": "electric",
         "doors": 4,
         "transmission": "automatic",
-        "id": 5
+        "id": 5,
+        "trips": []
     },
     {
         "size": "m",
         "fuel": "diesel",
         "doors": 4,
         "transmission": "automatic",
-        "id": 6
+        "id": 6,
+        "trips": []
     },
     {
         "size": "l",
         "fuel": "petrol",
         "doors": 3,
         "transmission": "automatic",
-        "id": 7
+        "id": 7,
+        "trips": []
     },
     {
         "size": "l",
         "fuel": "electric",
         "doors": 4,
         "transmission": "automatic",
-        "id": 8
+        "id": 8,
+        "trips": []
     },
     {
         "size": "l",
         "fuel": "diesel",
         "doors": 5,
         "transmission": "automatic",
-        "id": 9
+        "id": 9,
+        "trips": []
     },
     {
         "size": "xl",
         "fuel": "electric",
         "doors": 5,
         "transmission": "automatic",
-        "id": 10
+        "id": 10,
+        "trips": []
     },
     {
         "size": "xl",
         "fuel": "electric",
         "doors": 5,
         "transmission": "manual",
-        "id": 11
+        "id": 11,
+        "trips": []
     },
     {
         "size": "xl",
         "fuel": "diesel",
         "doors": 5,
         "transmission": "automatic",
-        "id": 12
+        "id": 12,
+        "trips": []
     },
     {
         "size": "xxl",
         "fuel": "petrol",
         "doors": 6,
         "transmission": "automatic",
-        "id": 13
+        "id": 13,
+        "trips": []
+    },
+    {
+        "size": "xl",
+        "fuel": "diesel",
+        "doors": 3,
+        "transmission": "hybrid",
+        "id": 14,
+        "trips": [
+            {
+                "start": 1200,
+                "end": 1450,
+                "description": "Testing the trip",
+                "id": 1
+            }
+        ]
+    },
+    {
+        "size": "xl",
+        "fuel": "diesel",
+        "doors": 3,
+        "transmission": "hybrid",
+        "id": 15,
+        "trips": []
     }
 ]
